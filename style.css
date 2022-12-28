@@ -11,10 +11,34 @@
 .block{
     min-height: 230px;
     border-radius: 5px;
-    background-color: lightgray;
+    background-color: #adb5bd;
     margin: 20px 0;
     padding: 20px;
     position: relative;
+}
+
+.center-block input{
+    background-color: #dee2e6;
+    width: 90px;
+    height: 30px;
+    border: 1px solid #ced4da;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.center-block input:hover {
+    background-color: #e9ecef;
+}
+.bottom-block .btn-add, .btn-save {
+    background-color: #dee2e6;
+    width: 90px;
+    height: 30px;
+    border: 1px solid #ced4da;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 15px;
+}
+.bottom-block .btn-add:hover, .btn-save:hover {
+    background-color: #e9ecef;
 }
 
 .edit-block, .style-block {
@@ -23,7 +47,7 @@
 
 .edit-area {
     width: 100%;
-    height: 100px;
+    height: 160px;
     resize: none;
 }
 
@@ -68,7 +92,7 @@
 .create-list{
     margin-top: 20px;
 }
-.create-list input[type = text] {
+.create-list input[type = number] {
     margin-left: 20px;
     width: 90%;
     height: 25px;
@@ -84,7 +108,7 @@
     height: 40px;
     border: none;
     border-radius: 5px;
-    background-color: lawngreen;
+    background-color: #dee2e6;
 }
 .wrapper-type-marks {
     margin-top: 20px;
@@ -104,7 +128,7 @@
 .wrapperBorder {
     margin-top: 20px;
 }
-.wrapperBorder input[type = text] {
+.wrapperBorder input[type = number] {
     margin-left: 10px;
     height: 25px;
 }
@@ -120,9 +144,24 @@
     margin-top: 20px;
     height: 30px;
     width: 100px;
-    border: 1px solid black;
-    background-color: rgb(39, 166, 39);
+    border: 1px solid #ced4da;
+    border-radius: 5px;
+    background-color: #dee2e6;
     cursor: pointer;
+}
+.create-table input[type = button]:hover{
+    background-color: #e9ecef;
+}
+.form-color input[type = button]{
+    height: 30px;
+    width: 130px;
+    border: 1px solid #ced4da;
+    border-radius: 5px;
+    background-color: #dee2e6;
+    cursor: pointer;
+}
+.form-color input[type = button]:hover {
+    background-color: #e9ecef;
 }
 .bold{
     font-weight: bold;

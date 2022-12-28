@@ -28,7 +28,8 @@ fF.addEventListener('change', function (e) {
     getS('.top-block').style.fontFamily = this.value;
 })
 
-let colors = ['red', 'green', 'blue', 'yellow', 'pink', 'gray', 'black', 'white', 'deeppink'];
+let colors = ['#ffe3e3', '#ffc9c9', '#ffa8a8', '#ff8787', '#ff6b6b', '#fa5252', '#f03e3e', '#e03131', '#c92a2a'];
+let bgColorsMas = ['#dbe4ff', '#bac8ff', '#91a7ff', '#748ffc', '#5c7cfa', '#4c6ef5', '#4263eb', '#3b5bdb', '#364fc7']
 for (let i = 0; i < getS('.colors').children.length; i++) {
     getS('.colors').children[i].style.backgroundColor = colors[i];
     getS('.colors').children[i].addEventListener('click',  function(){
@@ -36,7 +37,7 @@ for (let i = 0; i < getS('.colors').children.length; i++) {
     })
 }
 for(i = 0; i < getS('.bgColors').children.length; i++){
-    getS('.bgColors').children[i].style.backgroundColor = colors[i]
+    getS('.bgColors').children[i].style.backgroundColor = bgColorsMas[i]
     getS('.bgColors').children[i].addEventListener('click', function(){
         getS('.top-block').style.backgroundColor = this.style.backgroundColor;
     })
