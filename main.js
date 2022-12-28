@@ -106,7 +106,7 @@ getS('.btn-create-table').addEventListener('click', () =>{
     const widthBorder = table.widthBorder.value
     const typeBorder = table.typeBorder.value
     const colorBorder = table.colorBorder.value
-    getS('.edit-area').value += `<table style="border: ${widthBorder}px ${typeBorder} ${colorBorder}">`;
+    getS('.edit-area').value += `<table style="border: ${widthBorder}px ${typeBorder} ${colorBorder};  border-spacing: 0px 0px;">`;
     for(i=0; i<countTR; i++){
         getS('.edit-area').value += `<tr>`
         for(e=0; e<countTD; e++){
