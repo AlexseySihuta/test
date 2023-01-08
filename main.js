@@ -34,12 +34,14 @@ for (let i = 0; i < getS('.colors').children.length; i++) {
     getS('.colors').children[i].style.backgroundColor = colors[i];
     getS('.colors').children[i].addEventListener('click',  function(){
         getS('.top-block').style.color = this.style.backgroundColor;
+        getS('.colors').classList.add('hide')
     })
 }
 for(i = 0; i < getS('.bgColors').children.length; i++){
     getS('.bgColors').children[i].style.backgroundColor = bgColorsMas[i]
     getS('.bgColors').children[i].addEventListener('click', function(){
         getS('.top-block').style.backgroundColor = this.style.backgroundColor;
+        getS('.bgColors').classList.add('hide')
     })
 }
 getS('.btn-bg-color').addEventListener('click', function(){
